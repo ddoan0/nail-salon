@@ -2,6 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Basic React project built with semantic ui and react-router
 
+TO-DO:
+
+add footer for contact details
+Reviews Form submission
+google calendar / maps api
+
 ## Available Scripts
 
 In the project directory, you can run:

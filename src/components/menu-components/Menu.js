@@ -7,14 +7,8 @@ class Menu extends React.Component {
     return (
       <div className="ui segment">
         <div className="ui two column very relaxed grid">
-          <div className="column">
-            <h2 className="ui center aligned header">Manicures</h2>
-            <MenuList item="Full Set"/> 
-          </div>
-          <div className="column">
-            <h2 className="ui center aligned header">Pedicures</h2>
-            <MenuList item="Full Set"/>
-          </div>
+          <MenuList type='manicure' />
+          <MenuList type='pedicure' />
         </div>
         <div className="ui vertical divider"></div>
       </div>
