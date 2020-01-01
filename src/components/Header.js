@@ -14,7 +14,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="ui fluid two item menu ">
+      <div className="ui fluid three item menu ">
         <Link 
           onClick={() => this.onHeaderClick('Nail Salon')} 
           to="/" 
@@ -30,6 +30,14 @@ class Header extends React.Component {
         >
           <i className="file outline icon"></i>
           Menu
+        </Link>
+        <Link
+          onClick={() => this.onHeaderClick('Reviews')} 
+          to="/reviews" 
+          className={this.state.selectedHeader === 'Reviews' ? 'active red item': 'item'}
+        >
+          <i className="edit outline icon"></i>
+          Reviews
         </Link>
       </div>
     );

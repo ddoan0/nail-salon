@@ -5,7 +5,9 @@ Basic React project built with semantic ui and react-router
 TO-DO:
 
 add footer for contact details
-Reviews Form submission
+
+Make Reviews persist after changing tabs
+
 google calendar / maps api
 
 ## Available Scripts
