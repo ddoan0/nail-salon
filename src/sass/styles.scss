@@ -1,0 +1,82 @@
+// COLORS
+$color-grey-light-1: #f7f7f7;
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
+$color-pink-dark: #FD7173;
+$color-pink-light: #e49495;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-white;
+  padding: 3rem;
+}
+
+.picture-header {
+    height: 70vh;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-pink-light, 0.6), 
+      rgba($color-pink-dark, 0.6)),
+    url(../components/nail-salon.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+    }
+
+    &--sub {
+        margin-top: 6rem;
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+    }
+}
+
