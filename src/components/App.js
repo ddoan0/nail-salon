@@ -7,6 +7,7 @@ import Reviews from './reviews-components/Reviews';
 import Header from './Header';
 import PictureHeader from './PictureHeader';
 import PictureNav from './PictureNav';
+import LinksNavBar from './LinksNavBar';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <BrowserRouter>
         <PictureHeader />
         <PictureNav />
+        <LinksNavBar />
         <div>
           <Route path="/menu" exact component={Menu} />
           <Route path="/reviews" exact component={Reviews} />
