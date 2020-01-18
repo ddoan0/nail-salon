@@ -6,14 +6,15 @@ import Menu from './menu-components/Menu';
 import Reviews from './reviews-components/Reviews';
 import Header from './Header';
 import PictureHeader from './PictureHeader';
+import PictureNav from './PictureNav';
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
         <PictureHeader />
+        <PictureNav />
         <div>
-          <Route path="/" exact component={Home} />
           <Route path="/menu" exact component={Menu} />
           <Route path="/reviews" exact component={Reviews} />
         </div>

@@ -1,6 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Basic React project built with semantic ui and react-router
+Basic React project built with Sass CSS, React-Router, and Redux
 
 TO-DO:
 
