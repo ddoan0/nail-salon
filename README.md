@@ -1,4 +1,4 @@
-Basic React project built with Sass CSS, React-Router, and Redux
+Basic React project built with Sass CSS, React-Router, and Redux for the front end and Node.js, Express, PostgreSQL for the backend.
 
 TO-DO:
 
