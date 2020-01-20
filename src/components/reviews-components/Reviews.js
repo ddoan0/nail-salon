@@ -9,13 +9,16 @@ class Reviews extends React.Component {
   };
 
   componentDidMount() {
+    this.getComments();
+  }
+
+  getComments = () => {
     commentApi.get('/comments').then(response => {
-      console.log(response.data);
       this.setState({
-        reviews: [response.data]
+        reviews: response.data
       });
     });
-  }
+  };
 
   onFormSubmit = (name, rating, comment) => {
     const newReview = {
@@ -23,9 +26,14 @@ class Reviews extends React.Component {
       rating: rating,
       comment: comment
     };
-    this.setState({
-      reviews: [...this.state.reviews, newReview]
-    });
+    commentApi
+      .post('/comments', {
+        name,
+        comment
+      })
+      .then(response => {
+        this.getComments();
+      });
   };
 
   renderListHelper() {
