@@ -18,7 +18,7 @@ const PictureNav = () => {
         </div>
 
         <div className="col-2-of-3">
-          <div class="composition">
+          <div className="composition">
             <img
               src={redHandImg}
               alt="photo 1"

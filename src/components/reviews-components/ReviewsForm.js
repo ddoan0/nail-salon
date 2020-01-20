@@ -7,22 +7,25 @@ class ReviewsForm extends React.Component {
     comment: ''
   };
 
-  onNameChange = (event) => {
+  onNameChange = event => {
     this.setState({ name: event.target.value });
-  }
+  };
 
-  onRatingChange = (event) => {
+  onRatingChange = event => {
     this.setState({ rating: event.target.value });
-  }
+  };
 
-  onCommentChange = (event) => {
+  onCommentChange = event => {
     this.setState({ comment: event.target.value });
-  }
-  onFormSubmit = (event) => {
+  };
+  onFormSubmit = event => {
     event.preventDefault();
-    console.log('hello?');
-    this.props.onFormSubmit(this.state.name, this.state.rating, this.state.comment);
-  }
+    this.props.onFormSubmit(
+      this.state.name,
+      this.state.rating,
+      this.state.comment
+    );
+  };
 
   render() {
     return (
@@ -36,23 +39,25 @@ class ReviewsForm extends React.Component {
               onChange={this.onNameChange}
             />
             <label>Rating</label>
-            <input 
+            <input
               type="number"
               value={this.state.rating}
               onChange={this.onRatingChange}
             />
             <label>Comments</label>
-            <input 
+            <input
               type="text"
               value={this.state.comment}
               onChange={this.onCommentChange}
             />
-            <button type="button" onClick={this.onFormSubmit}>Submit</button>
+            <button type="button" onClick={this.onFormSubmit}>
+              Submit
+            </button>
           </div>
         </form>
       </div>
     );
-  };
+  }
 }
 
 export default ReviewsForm;
