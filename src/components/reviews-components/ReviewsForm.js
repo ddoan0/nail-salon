@@ -18,6 +18,7 @@ class ReviewsForm extends React.Component {
   onCommentChange = event => {
     this.setState({ comment: event.target.value });
   };
+
   onFormSubmit = event => {
     event.preventDefault();
     this.props.onFormSubmit(

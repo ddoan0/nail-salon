@@ -2,6 +2,8 @@ Basic React project built with Sass CSS, React-Router, and Redux for the front e
 
 TO-DO:
 
+Add styling to reviews
+
 add footer for contact details
 
 google calendar / maps api

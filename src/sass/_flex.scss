@@ -1,0 +1,20 @@
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-element {
+    border-radius: 10rem;
+    background-color: $color-pink-dark;
+    padding: 1rem;
+    margin: 1.6rem;
+    flex: 0 0 calc(33.333% - 3.2rem);
+    animation: moveInBottom .5s ease-out 0s;
+    animation-fill-mode: backwards;
+}
+
+.header-text {
+    text-align: center;
+}

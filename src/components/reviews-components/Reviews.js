@@ -39,14 +39,10 @@ class Reviews extends React.Component {
   renderListHelper() {
     return this.state.reviews.map(review => {
       return (
-        <div className="item" key={review.name}>
-          <i className="large middle aligned icon user" />
-          <div className="content">
-            <div className="description">
-              <h2>{review.name}</h2>
-
-              <p>{review.comment}</p>
-            </div>
+        <div className="flex-element" key={review.name}>
+          <div className="header-text">
+            <h2>{review.name}</h2>
+            <p>{review.comment}</p>
           </div>
         </div>
       );
@@ -57,7 +53,7 @@ class Reviews extends React.Component {
     return (
       <React.Fragment>
         <ReviewsForm onFormSubmit={this.onFormSubmit} />
-        <div className="ui relaxed divided list">{this.renderListHelper()}</div>
+        <div className="flex-container">{this.renderListHelper()}</div>
       </React.Fragment>
     );
   }
